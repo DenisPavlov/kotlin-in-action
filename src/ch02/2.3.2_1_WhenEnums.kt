@@ -6,15 +6,15 @@ enum class Color {
 
 fun getMnemonic(color: Color) =
     when (color) {
-        Color.RED -> "Richard"
-        Color.ORANGE -> "Of"
-        Color.YELLOW -> "York"
-        Color.GREEN -> "Gave"
-        Color.BLUE -> "Battle"
-        Color.INDIGO -> "In"
-        Color.VIOLET -> "Vain"
+        Color.RED -> "Каждый"
+        Color.ORANGE -> "Охотник"
+        Color.YELLOW -> "Желает"
+        Color.GREEN -> "Знать"
+        Color.BLUE -> "Где"
+        Color.INDIGO -> "Сидить"
+        Color.VIOLET -> "Фазан"
     }
 
 fun main(args: Array<String>) {
-    println(getMnemonic(Color.BLUE))
+    println(getMnemonic(Color.YELLOW))
 }

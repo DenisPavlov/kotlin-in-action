@@ -1,4 +1,4 @@
-package ch02.ex2_2_CustomAccessors
+package ch02
 
 class Rectangle(val height: Int, val width: Int) {
     val isSquare: Boolean
@@ -8,6 +8,6 @@ class Rectangle(val height: Int, val width: Int) {
 }
 
 fun main(args: Array<String>) {
-    val rectangle = Rectangle(41, 43)
+    val rectangle = Rectangle(41, 41)
     println(rectangle.isSquare)
 }
