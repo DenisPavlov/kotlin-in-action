@@ -1,4 +1,4 @@
-package ch03.JoinToStringFinal
+package ch03.strings
 
 fun <T> Collection<T>.joinToString(
         separator: String = ", ",
@@ -14,9 +14,4 @@ fun <T> Collection<T>.joinToString(
 
     result.append(postfix)
     return result.toString()
-}
-
-fun main(args: Array<String>) {
-    val list = listOf(1, 2, 3)
-    println(list.joinToString(separator = "; ", prefix = "(", postfix = ")"))
 }
