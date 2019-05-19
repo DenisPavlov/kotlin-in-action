@@ -14,6 +14,6 @@ class User private constructor(val nickname: String) {
 
 fun main() {
     val subscribingUser = User.newSubscribingUser("bob@gmail.com")
-    val facebookUser = User.newFacebookUser(4)
+//    val facebookUser = User.newFacebookUser(4)
     println(subscribingUser.nickname)
 }
