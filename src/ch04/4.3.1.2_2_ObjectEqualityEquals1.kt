@@ -5,12 +5,17 @@ class Client(val name: String, val postalCode: Int) {
         if (other == null || other !is Client)
             return false
         return name == other.name &&
-               postalCode == other.postalCode
+                postalCode == other.postalCode
     }
+
     override fun toString() = "Client(name=$name, postalCode=$postalCode)"
+
+    override fun hashCode(): Int {
+        return name.hashCode() * 31 + postalCode
+    }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val processed = hashSetOf(Client("Alice", 342562))
     println(processed.contains(Client("Alice", 342562)))
 }

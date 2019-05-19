@@ -9,7 +9,7 @@ data class Person(val name: String) {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val persons = listOf(Person("Bob"), Person("Alice"))
     println(persons.sortedWith(Person.NameComparator))
 }
