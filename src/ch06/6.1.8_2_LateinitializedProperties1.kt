@@ -11,12 +11,16 @@ class MyService {
 class MyTest {
     private lateinit var myService: MyService
 
-    @Before fun setUp() {
+    @Before
+    fun setUp() {
         myService = MyService()
     }
 
-    @Test fun testAction() {
-        Assert.assertEquals("foo",
-            myService.performAction())
+    @Test
+    fun testAction() {
+        Assert.assertEquals(
+            "foo",
+            myService.performAction()
+        )
     }
 }
