@@ -4,6 +4,11 @@ fun fail(message: String): Nothing {
     throw IllegalStateException(message)
 }
 
-fun main(args: Array<String>) {
+fun foo(u: Unit) {
+    println(u)
+}
+
+fun main() {
+    foo(Unit)
     fail("Error occurred")
 }
