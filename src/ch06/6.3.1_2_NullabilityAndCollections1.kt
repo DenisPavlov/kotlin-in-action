@@ -10,8 +10,7 @@ fun readNumbers(reader: BufferedReader): List<Int?> {
         try {
             val number = line.toInt()
             result.add(number)
-        }
-        catch(e: NumberFormatException) {
+        } catch (e: NumberFormatException) {
             result.add(null)
         }
     }
@@ -24,7 +23,7 @@ fun addValidNumbers(numbers: List<Int?>) {
     println("Invalid numbers: ${numbers.size - validNumbers.size}")
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val reader = BufferedReader(StringReader("1\nabc\n42"))
     val numbers = readNumbers(reader)
     addValidNumbers(numbers)
